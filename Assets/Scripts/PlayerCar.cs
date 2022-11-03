@@ -7,15 +7,20 @@ public class PlayerCar : MonoBehaviour
     [Header("speeds y steering: a mas valor, mas es el efecto")]
     public float speed;
     public float steering;
+    public float speedInertia;
     public float steeringSpeed;
     [Header("brakes: a mas valor, menos es el efecto")]
     public float brakes;
 
     private Rigidbody rb;
+    private float steeringSpeedInverse;
+    private float desiredRot;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        steeringSpeedInverse = (steeringSpeed * -1);
+        desiredRot = transform.eulerAngles.y;
     }
 
     void Update()
@@ -30,18 +35,13 @@ public class PlayerCar : MonoBehaviour
             rb.velocity -= rb.velocity / brakes;
         }
 
-        if (Input.GetKey(KeyCode.T))//T de Turbo jaja
-        {
-            //to do: turbo
-        }
-
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(Vector3.down * steering * Time.deltaTime);
 
             if (rb.velocity.z > 1 || rb.velocity.z < -1)
             {
-                rb.AddForce(transform.forward * steeringSpeed, ForceMode.Impulse);
+                rb.AddForce(transform.right * steeringSpeedInverse, ForceMode.Impulse);
             }
         }
 
@@ -51,8 +51,13 @@ public class PlayerCar : MonoBehaviour
 
             if (rb.velocity.z > 1 || rb.velocity.z < -1)
             {
-                rb.AddForce(transform.forward * steeringSpeed, ForceMode.Impulse);
+                rb.AddForce(transform.right * steeringSpeed, ForceMode.Impulse);
             }
+        }
+
+        if (rb.velocity.z > 1 || rb.velocity.z < -1)
+        {
+            rb.AddForce(transform.forward * speedInertia, ForceMode.Impulse);
         }
     }
 }

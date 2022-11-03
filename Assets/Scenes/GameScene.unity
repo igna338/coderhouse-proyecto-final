@@ -2141,7 +2141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   steering: 70
-  steeringSpeed: 25
+  speedInertia: 0
+  steeringSpeed: 50
   brakes: 300
 --- !u!65 &8216818202482833267
 BoxCollider:
