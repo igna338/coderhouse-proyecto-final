@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TriggerOutOfTrack : MonoBehaviour
 {
+    public GameEvents gameEvents;
     public GameObject playerCar;
     private Rigidbody playerCarRb;
     private Vector3 respawnPos;
@@ -14,6 +15,7 @@ public class TriggerOutOfTrack : MonoBehaviour
         respawnPos = playerCar.transform.position;
         respawnRot = playerCar.transform.rotation;
         playerCarRb = playerCar.GetComponent<Rigidbody>();
+        gameEvents.CheckpointPassedEvent.AddListener(OnCheckPointPassed);
     }
 
     private void Update()
@@ -22,6 +24,12 @@ public class TriggerOutOfTrack : MonoBehaviour
         {
             ResetCar();
         }
+    }
+
+    private void OnCheckPointPassed(Vector3 newRespawnPos, Quaternion newRespawnRot)
+    {
+        respawnPos = newRespawnPos;
+        respawnRot = newRespawnRot;
     }
 
     private void OnTriggerEnter(Collider other)

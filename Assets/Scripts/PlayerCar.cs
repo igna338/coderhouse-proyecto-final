@@ -14,13 +14,16 @@ public class PlayerCar : MonoBehaviour
 
     private Rigidbody rb;
     private float steeringSpeedInverse;
-    private float desiredRot;
+    private List<Transform> carWheels = new();
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         steeringSpeedInverse = (steeringSpeed * -1);
-        desiredRot = transform.eulerAngles.y;
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            carWheels.Add(transform.GetChild(i));
+        }
     }
 
     void Update()
@@ -58,6 +61,10 @@ public class PlayerCar : MonoBehaviour
         if (rb.velocity.z > 1 || rb.velocity.z < -1)
         {
             rb.AddForce(transform.forward * speedInertia, ForceMode.Impulse);
+            foreach (var wheel in carWheels)
+            {
+                wheel.Rotate(-50, 0, 0 * Time.deltaTime);
+            }
         }
     }
 }
