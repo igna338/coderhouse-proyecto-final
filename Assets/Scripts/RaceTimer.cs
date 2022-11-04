@@ -4,18 +4,39 @@ using UnityEngine.UI;
 public class RaceTimer : MonoBehaviour
 {
     public GameEvents gameEvents;
+    public PlayerCar playerCar;
     public int minutes, seconds;
-    public Text timeRemainingText;
+    public Text timeText;
+    private int countdownSeconds = 4;
     private string stringMinutes, stringSeconds;
 
-    public void ResumeTime()
+    public void StartRaceCountdown()
     {
-        InvokeRepeating("TimeDeduction", 0, 1);//0s delay, 1s repeat
+        InvokeRepeating("RaceCountdown", 0, 1);//0s delay, 1s repeat
     }
 
-    public void StopTime()
+    private void RaceCountdown()
     {
-        CancelInvoke("TimeDeduction");
+        countdownSeconds--;
+        //race start:
+        if (countdownSeconds == 0)
+        {
+            StartTimer();
+            CancelInvoke("RaceCountdown");
+            playerCar.enabled = true;
+        }
+
+        UpdateCountdownUI();
+    }
+
+    private void UpdateCountdownUI()
+    {
+        timeText.text = countdownSeconds.ToString();
+    }
+
+    private void StartTimer()
+    {
+        InvokeRepeating("TimeDeduction", 0, 1);//0s delay, 1s repeat
     }
 
     private void TimeDeduction()
@@ -28,7 +49,7 @@ public class RaceTimer : MonoBehaviour
                 seconds = 59;
             }
             else
-                FinishMatch();
+                FinishRace();
         }
         else
         {
@@ -48,10 +69,10 @@ public class RaceTimer : MonoBehaviour
         if (stringSeconds.Length == 1)
             stringSeconds = "0" + stringSeconds;
 
-        timeRemainingText.text = stringMinutes + ":" + stringSeconds;
+        timeText.text = stringMinutes + ":" + stringSeconds;
     }
 
-    private void FinishMatch()
+    private void FinishRace()
     {
         gameEvents.RaceTimerEvent.Invoke();
     }
