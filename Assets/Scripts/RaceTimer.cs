@@ -7,6 +7,9 @@ public class RaceTimer : MonoBehaviour
     public PlayerCar playerCar;
     public int minutes, seconds;
     public Text timeText;
+    public Image timePanel;
+    public Text countdownText;
+    public Image countdownPanel;
     private int countdownSeconds = 4;
     private string stringMinutes, stringSeconds;
 
@@ -24,6 +27,10 @@ public class RaceTimer : MonoBehaviour
             StartTimer();
             CancelInvoke("RaceCountdown");
             playerCar.enabled = true;
+            countdownText.enabled = false;
+            countdownPanel.enabled = false;
+            timeText.enabled = true;
+            timePanel.enabled = true;
         }
 
         UpdateCountdownUI();
@@ -31,7 +38,7 @@ public class RaceTimer : MonoBehaviour
 
     private void UpdateCountdownUI()
     {
-        timeText.text = countdownSeconds.ToString();
+        countdownText.text = countdownSeconds.ToString();
     }
 
     private void StartTimer()
