@@ -48,7 +48,7 @@ public class TriggerOutOfTrack : MonoBehaviour
 
     IEnumerator UnfreezeResetedCar()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         playerCarRb.constraints = RigidbodyConstraints.None;
         yield return null;
     }
