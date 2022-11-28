@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class RaceTimer : MonoBehaviour
 {
     public GameEvents gameEvents;
-    public PlayerCar playerCar;
+    public CarRigidbodyConstraints playerCar;
     public int minutes, seconds;
     public Text timeText;
     public Image timePanel;
@@ -26,7 +26,7 @@ public class RaceTimer : MonoBehaviour
         {
             StartTimer();
             CancelInvoke("RaceCountdown");
-            playerCar.enabled = true;
+            playerCar.Unfreeze();
             countdownText.enabled = false;
             countdownPanel.enabled = false;
             timeText.enabled = true;

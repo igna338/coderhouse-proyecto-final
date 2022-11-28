@@ -40,7 +40,16 @@ public class TriggerOutOfTrack : MonoBehaviour
     private void ResetCar()
     {
         playerCarRb.velocity = playerCarRb.velocity * 0;
+        playerCarRb.constraints = RigidbodyConstraints.FreezeAll;
         playerCar.transform.position = respawnPos;
         playerCar.transform.rotation = respawnRot;
+        StartCoroutine(UnfreezeResetedCar());
+    }
+
+    IEnumerator UnfreezeResetedCar()
+    {
+        yield return new WaitForSeconds(0.5f);
+        playerCarRb.constraints = RigidbodyConstraints.None;
+        yield return null;
     }
 }
