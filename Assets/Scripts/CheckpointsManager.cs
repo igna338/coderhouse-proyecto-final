@@ -5,7 +5,9 @@ public class CheckpointsManager : MonoBehaviour
 {
     public GameEvents gameEvents;
     public List<GameObject> checkpoints;
+    public int raceLaps;
     private int currentCheckpoint;
+    private int lapsDone;
     private bool isRaceFinish;
 
     private void Awake()
@@ -25,8 +27,13 @@ public class CheckpointsManager : MonoBehaviour
             currentCheckpoint++;
             if (currentCheckpoint == checkpoints.Count - 1)
             {
+                currentCheckpoint = 0;
                 checkpoints[0].SetActive(true);
-                isRaceFinish = true;
+                lapsDone++;
+                if (lapsDone == raceLaps)
+                {
+                    isRaceFinish = true;
+                }
             }
             else
             {

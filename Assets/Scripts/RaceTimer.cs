@@ -5,6 +5,7 @@ public class RaceTimer : MonoBehaviour
 {
     public GameEvents gameEvents;
     public CarRigidbodyConstraints playerCar;
+    public TriggerOutOfTrack resetCar;
     public int minutes, seconds;
     public Text timeText;
     public Image timePanel;
@@ -31,6 +32,7 @@ public class RaceTimer : MonoBehaviour
             countdownPanel.enabled = false;
             timeText.enabled = true;
             timePanel.enabled = true;
+            resetCar.RaceStarted();
         }
 
         UpdateCountdownUI();

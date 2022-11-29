@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.27754542, g: 0.28762782, b: 0.31132078, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.005
@@ -239,6 +239,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -860,6 +864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -1015,8 +1023,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameEvents: {fileID: 11400000, guid: a03ec38bd3500b94abab2e52c40fcb77, type: 2}
   playerCar: {fileID: 8216818202482833270}
-  minutes: 1
-  seconds: 20
+  resetCar: {fileID: 1251467755}
+  minutes: 2
+  seconds: 10
   timeText: {fileID: 808847480}
   timePanel: {fileID: 1697020601}
   countdownText: {fileID: 2093759363}
@@ -1290,6 +1299,10 @@ PrefabInstance:
     - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
       propertyPath: m_Name
       value: Street Light 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
@@ -1870,6 +1883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -2406,6 +2423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -2416,7 +2437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.9400005
+      value: -2.16
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2781,6 +2802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -2989,6 +3014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -3121,6 +3150,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -3676,6 +3709,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -4325,6 +4362,10 @@ PrefabInstance:
     - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
       propertyPath: m_Name
       value: Street Light 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
@@ -5825,6 +5866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -6477,6 +6522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -6808,6 +6857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -7130,6 +7183,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -7464,6 +7521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -7623,6 +7684,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -8016,6 +8081,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -8575,6 +8644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -8698,6 +8771,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1cb2babfe757bf4cb23bf341a08bbda, type: 3}
+--- !u!1 &677209967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 677209968}
+  m_Layer: 0
+  m_Name: LookAtTargetCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &677209968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677209967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.325, y: 0.85, z: -0.065}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5019221152585545940}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &678245160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8712,6 +8816,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -8773,6 +8881,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -9973,6 +10085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -10299,6 +10415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
 --- !u!1001 &850683020
@@ -10372,6 +10492,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -10974,6 +11098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -11242,7 +11370,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerCamera1
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -11294,7 +11422,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -11364,6 +11492,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -11445,6 +11577,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -11529,7 +11665,7 @@ GameObject:
   - component: {fileID: 992426525}
   - component: {fileID: 992426524}
   - component: {fileID: 992426526}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerCamera3
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -11544,7 +11680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992426521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.34, y: 0.85, z: -0.15}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11596,7 +11732,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -11614,8 +11750,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9b4a01e27988249940d636e823f2ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steer: 0
-  speed: 0
+  steeringFactor: 0.01
+  speedFactor: 0.05
+  target: {fileID: 677209968}
 --- !u!1 &992951573
 GameObject:
   m_ObjectHideFlags: 0
@@ -12096,6 +12233,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -12783,6 +12924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -13267,6 +13412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -13371,9 +13520,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Al empezar aparece un contador en pantalla debes terminar
+  m_text: 'Al empezar aparece un contador en pantalla
 
-    una vuelta
+    Debes terminar las vueltas
     antes de que el tiempo se acabe'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 13ccc3d95e149804c80e0fdf70c2d674, type: 2}
@@ -13465,6 +13614,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -13685,7 +13838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1176582627}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13724,6 +13877,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -13929,6 +14086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -14127,6 +14288,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -14609,6 +14774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -14858,6 +15027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -14987,6 +15160,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -15328,6 +15505,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -15954,6 +16135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -16076,6 +16261,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -16300,6 +16489,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -16569,6 +16762,7 @@ MonoBehaviour:
   - {fileID: 996888541}
   - {fileID: 133274434}
   - {fileID: 587506734}
+  raceLaps: 2
 --- !u!4 &1464451516
 Transform:
   m_ObjectHideFlags: 0
@@ -16911,6 +17105,10 @@ PrefabInstance:
     - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
       propertyPath: m_Name
       value: Street Light 2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
@@ -18063,6 +18261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -18297,6 +18499,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -18687,7 +18893,7 @@ GameObject:
   - component: {fileID: 1601081692}
   - component: {fileID: 1601081691}
   - component: {fileID: 1601081690}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Start Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19780,6 +19986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LED Street Light (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -20005,6 +20215,10 @@ PrefabInstance:
     - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
       propertyPath: m_Name
       value: Street Light 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
@@ -20643,6 +20857,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -21574,6 +21792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -21701,6 +21923,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: LED Street Light (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder
@@ -22534,7 +22760,7 @@ GameObject:
   - component: {fileID: 2076658264}
   - component: {fileID: 2076658263}
   - component: {fileID: 2076658262}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerCamera2
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -22602,7 +22828,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -23280,6 +23506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
 --- !u!1 &1407597442121206471
@@ -23626,6 +23856,7 @@ Transform:
   - {fileID: 2393492073616499944}
   - {fileID: 9088596839535237350}
   - {fileID: 992426522}
+  - {fileID: 677209968}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -36, z: 0}
@@ -23764,6 +23995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Street Light 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8651724615080756134, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edb1dfaa2c8c0824f95e4968fae675af, type: 3}
 --- !u!23 &6191596091404911547
@@ -23829,6 +24064,10 @@ PrefabInstance:
     - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_Name
       value: Street Light 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845154789890277266, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
       propertyPath: m_RootOrder

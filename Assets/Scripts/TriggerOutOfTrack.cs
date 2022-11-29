@@ -9,6 +9,7 @@ public class TriggerOutOfTrack : MonoBehaviour
     private Rigidbody playerCarRb;
     private Vector3 respawnPos;
     private Quaternion respawnRot;
+    private bool raceStarted;
 
     private void Awake()
     {
@@ -18,9 +19,14 @@ public class TriggerOutOfTrack : MonoBehaviour
         gameEvents.CheckpointPassedEvent.AddListener(OnCheckPointPassed);
     }
 
+    public void RaceStarted()
+    {
+        raceStarted = true;
+    }
+
     private void Update()
     {
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.R) && raceStarted)
         {
             ResetCar();
         }
