@@ -11,6 +11,8 @@ public class RaceTimer : MonoBehaviour
     public Image timePanel;
     public Text countdownText;
     public Image countdownPanel;
+    public AudioSource readySFX;
+    public AudioSource goSFX;
     private int countdownSeconds = 4;
     private string stringMinutes, stringSeconds;
 
@@ -33,6 +35,11 @@ public class RaceTimer : MonoBehaviour
             timeText.enabled = true;
             timePanel.enabled = true;
             resetCar.RaceStarted();
+            goSFX.Play();
+        }
+        else
+        {
+            readySFX.Play();
         }
 
         UpdateCountdownUI();

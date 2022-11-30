@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerCameras : MonoBehaviour
 {
+    public GameEvents gameEvents;
     public List<Camera> playerCameras = new();
     private int currentCamera;
     private int currentCameraCount;
@@ -30,6 +31,14 @@ public class PlayerCameras : MonoBehaviour
                 if (i == currentCamera)
                 {
                     playerCameras[i].enabled = true;
+                    if (playerCameras[i].GetComponent<CameraInteriorFollow>() != null)
+                    {
+                        gameEvents.InteriorCameraEvent.Invoke(true);
+                    }
+                    else
+                    {
+                        gameEvents.InteriorCameraEvent.Invoke(false);
+                    }
                 }
                 else
                 {
