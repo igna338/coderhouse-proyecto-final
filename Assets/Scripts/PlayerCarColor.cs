@@ -12,6 +12,9 @@ public class PlayerCarColor : MonoBehaviour
 
     public void Start()
     {
-        carRenderer.materials[1].color = gameManager.carColorSelected;
+        if (gameManager != null)
+        {
+            carRenderer.materials[1].color = gameManager.carColorSelected;
+        }
     }
 }
