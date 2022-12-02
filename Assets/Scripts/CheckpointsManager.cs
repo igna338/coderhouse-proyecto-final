@@ -25,7 +25,7 @@ public class CheckpointsManager : MonoBehaviour
         {
             checkpoints[currentCheckpoint].SetActive(false);
             currentCheckpoint++;
-            if (currentCheckpoint == checkpoints.Count - 1)
+            if (currentCheckpoint == checkpoints.Count)
             {
                 currentCheckpoint = 0;
                 checkpoints[0].SetActive(true);
