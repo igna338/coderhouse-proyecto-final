@@ -6,7 +6,7 @@ public class CheckpointsManager : MonoBehaviour
     public GameEvents gameEvents;
     public List<GameObject> checkpoints;
     public int raceLaps;
-    private int currentCheckpoint;
+    public int currentCheckpoint;
     private int lapsDone;
     private bool isRaceFinish;
 

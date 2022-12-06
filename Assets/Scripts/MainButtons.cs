@@ -4,9 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class MainButtons : MonoBehaviour
 {
+    public GameObject carTrackSelect;
+
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        carTrackSelect.SetActive(true);
     }
 
     public void MainMenu()

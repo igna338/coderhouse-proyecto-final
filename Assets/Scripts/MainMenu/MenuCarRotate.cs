@@ -9,7 +9,7 @@ public class MenuCarRotate : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("UpdateRotation", 1, rotationRepeatRate);
+        InvokeRepeating("UpdateRotation", 0.01f, rotationRepeatRate);
     }
 
     private void UpdateRotation()

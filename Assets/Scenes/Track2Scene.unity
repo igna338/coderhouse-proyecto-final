@@ -3572,6 +3572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e30725575cafeef45bdc051fe1987f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SunRotateRate: 0.1
   SunRotateSpeed: 0.01
   Sun: {fileID: 705507993}
 --- !u!1 &287667653
@@ -13361,6 +13362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d386427d0e2f6047a49b08cec7fda8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carTrackSelect: {fileID: 0}
 --- !u!4 &1372334391
 Transform:
   m_ObjectHideFlags: 0
@@ -13748,6 +13750,7 @@ MonoBehaviour:
   - {fileID: 996888541}
   - {fileID: 133274434}
   raceLaps: 3
+  currentCheckpoint: 0
 --- !u!4 &1464451516
 Transform:
   m_ObjectHideFlags: 0
