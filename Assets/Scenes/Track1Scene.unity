@@ -16575,6 +16575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d386427d0e2f6047a49b08cec7fda8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carTrackSelect: {fileID: 0}
 --- !u!4 &1372334391
 Transform:
   m_ObjectHideFlags: 0
@@ -17513,6 +17514,7 @@ MonoBehaviour:
   - {fileID: 133274434}
   - {fileID: 587506734}
   raceLaps: 2
+  currentCheckpoint: 0
 --- !u!4 &1464451516
 Transform:
   m_ObjectHideFlags: 0
@@ -24497,6 +24499,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3885937277796711, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.0872
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166216048381285390, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 5406.379
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166216048381285390, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 50684.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690983848436557824, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: m_SuspensionDistance
       value: 0.0872
       objectReference: {fileID: 0}
