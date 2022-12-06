@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class MainButtons : MonoBehaviour
 {
     public GameObject carTrackSelect;
+    private GameManager gameManager;
 
     public void Play()
     {
@@ -13,6 +14,8 @@ public class MainButtons : MonoBehaviour
 
     public void MainMenu()
     {
+        gameManager = GameManager.inst;
+        Destroy(gameManager.gameObject);
         SceneManager.LoadScene(0);
     }
 
