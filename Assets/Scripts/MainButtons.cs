@@ -15,7 +15,8 @@ public class MainButtons : MonoBehaviour
     public void MainMenu()
     {
         gameManager = GameManager.inst;
-        Destroy(gameManager.gameObject);
+        if (gameManager != null)
+        { Destroy(gameManager.gameObject); }
         SceneManager.LoadScene(0);
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028359, g: 0.22571385, b: 0.30692258, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1613,10 +1613,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RUN IT SPEED
+  m_text: SPEED TRIALS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 13ccc3d95e149804c80e0fdf70c2d674, type: 2}
-  m_sharedMaterial: {fileID: 403743304313593435, guid: 13ccc3d95e149804c80e0fdf70c2d674, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1517130e4dda87740860ad6ee6ec04bc, type: 2}
+  m_sharedMaterial: {fileID: -7885964136583867586, guid: 1517130e4dda87740860ad6ee6ec04bc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1640,12 +1640,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 94.3
   m_fontSizeBase: 55.56
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 102
   m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3644,7 +3644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262467647052824192, guid: 073ef22e621a71f408237eb063984aba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -494.99997
+      value: -494.8803
       objectReference: {fileID: 0}
     - target: {fileID: 6262467647052824192, guid: 073ef22e621a71f408237eb063984aba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3713,7 +3713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 15, y: 17.50003}
+  m_AnchoredPosition: {x: 15, y: 17.500061}
   m_SizeDelta: {x: 275, y: 75}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1370613554
@@ -4247,7 +4247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262467647052824192, guid: 073ef22e621a71f408237eb063984aba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -304.99997
+      value: -304.8803
       objectReference: {fileID: 0}
     - target: {fileID: 6262467647052824192, guid: 073ef22e621a71f408237eb063984aba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5860,7 +5860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262467647052824192, guid: 073ef22e621a71f408237eb063984aba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -114.99997
+      value: -114.88031
       objectReference: {fileID: 0}
     - target: {fileID: 6262467647052824192, guid: 073ef22e621a71f408237eb063984aba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

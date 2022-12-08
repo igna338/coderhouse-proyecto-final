@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameEvents: {fileID: 11400000, guid: a03ec38bd3500b94abab2e52c40fcb77, type: 2}
+  checkpointSFX: {fileID: 0}
 --- !u!1 &3711667266919662114
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5606faaf42846ca4ba18f61037a7862a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -203,9 +204,9 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 126
-  m_FontStyle: 1
+  m_FontStyle: 2
   m_RichText: 1
-  m_Font: {fileID: 0}
+  m_Font: {fileID: 12800000, guid: 5606faaf42846ca4ba18f61037a7862a, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 3539992575

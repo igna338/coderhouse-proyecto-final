@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public enum DriveType
 {
@@ -34,6 +35,7 @@ public class PlayerCarController : MonoBehaviour
 	[Range(1, 10)]
 	public float steerMaxFactor;
 	public float steerMinAngle;
+	public Text speedometerText;
 
 	private Rigidbody rb;
 	private float steerMax;
@@ -106,6 +108,8 @@ public class PlayerCarController : MonoBehaviour
 		}
 
 		MaxAngleBySpeed();
+
+		speedometerText.text = "KM/H\n" + (carSpeed* 4.5f).ToString("F0");
 	}
 
 	private void MaxAngleBySpeed()
