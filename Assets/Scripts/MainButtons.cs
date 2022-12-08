@@ -17,6 +17,7 @@ public class MainButtons : MonoBehaviour
         gameManager = GameManager.inst;
         if (gameManager != null)
         { Destroy(gameManager.gameObject); }
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
