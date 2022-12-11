@@ -21,6 +21,7 @@ public class PlayerCarSkidAudio : MonoBehaviour
         else
         {
             audioSources[audioN].Stop();
+            isAudioPlaying = false;
         }
     }
 
