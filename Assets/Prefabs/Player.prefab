@@ -292,7 +292,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 7a235db838312e34d8659d763bb3f3fc, type: 2}
   m_audioClip: {fileID: 8300000, guid: 94ae3bfe3f99da349959f707d8657830, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.325
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -818,7 +818,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 7a235db838312e34d8659d763bb3f3fc, type: 2}
   m_audioClip: {fileID: 8300000, guid: a820aec08ceb1354b95cd299f2201274, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.325
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1318,6 +1318,7 @@ MonoBehaviour:
   carSpeed: 0
   steerMaxFactor: 3
   steerMinAngle: 10
+  speedometerText: {fileID: 0}
 --- !u!114 &5562111317435238290
 MonoBehaviour:
   m_ObjectHideFlags: 0

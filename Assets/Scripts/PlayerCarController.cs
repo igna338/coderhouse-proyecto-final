@@ -14,8 +14,10 @@ public class PlayerCarController : MonoBehaviour
 	public float maxAngle = 30f;
 	[Tooltip("Maximum torque applied to the driving wheels")]
 	public float maxTorque = 300f;
+	[Tooltip("Maximum multiplier applied to torque when vertical input axis is negative.")]
+	public float maxBrakes = 2f;
 	[Tooltip("Maximum brake torque applied to the driving wheels")]
-	public float brakeTorque = 30000f;
+	public float handbrakeTorque = 30000f;
 	[Tooltip("If you need the visual wheels to be attached automatically, drag the wheel shape here.")]
 	public GameObject wheelShape;
 	[Tooltip("The scale of the wheel being instantiated")]
@@ -66,8 +68,16 @@ public class PlayerCarController : MonoBehaviour
 		m_Wheels[0].ConfigureVehicleSubsteps(criticalSpeed, stepsBelow, stepsAbove);
 
 		angle = maxAngle * Input.GetAxis("Horizontal");
-		torque = maxTorque * Input.GetAxis("Vertical");
-		handBrake = Input.GetKey(KeyCode.X) ? brakeTorque : 0;
+		var inputVertical = Input.GetAxis("Vertical");
+		if (inputVertical < 0)
+        {
+			torque = maxTorque * inputVertical * maxBrakes;
+		}
+		else
+        {
+			torque = maxTorque * inputVertical;
+		}
+		handBrake = Input.GetKey(KeyCode.X) ? handbrakeTorque : 0;
 
 		for (int i = 0; i < m_Wheels.Length; i++)
 		{
