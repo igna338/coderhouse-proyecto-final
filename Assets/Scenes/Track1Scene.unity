@@ -1193,6 +1193,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
   m_PrefabInstance: {fileID: 1787837925}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &74084046 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4942543597648700786, guid: 406642d3930125a43a00be72777e6c06, type: 3}
+  m_PrefabInstance: {fileID: 888121325}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &77241792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
@@ -22250,6 +22261,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3713323277549013268, guid: d7ba9411ae36ab14198615a80774ce85, type: 3}
   m_PrefabInstance: {fileID: 1149605404}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2016185044 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3926280647136097753, guid: 406642d3930125a43a00be72777e6c06, type: 3}
+  m_PrefabInstance: {fileID: 888121325}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2017677954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24069,8 +24091,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3885937277796711, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.0872
+      value: 0.08719999
       objectReference: {fileID: 0}
+    - target: {fileID: 2057673159131829878, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
+      propertyPath: leftWarningCollision
+      value: 
+      objectReference: {fileID: 74084046}
+    - target: {fileID: 2057673159131829878, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
+      propertyPath: rightWarningCollision
+      value: 
+      objectReference: {fileID: 2016185044}
     - target: {fileID: 2166216048381285390, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: m_SuspensionSpring.damper
       value: 5406.379
@@ -24085,11 +24115,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4690983848436557824, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 5277.031
+      value: 5277.0317
       objectReference: {fileID: 0}
     - target: {fileID: 4690983848436557824, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: m_SuspensionSpring.spring
-      value: 49472.164
+      value: 49472.17
       objectReference: {fileID: 0}
     - target: {fileID: 5562111317435238293, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: speedometerText
@@ -24145,15 +24175,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8893715453903765563, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: m_SuspensionDistance
-      value: 0.08719999
+      value: 0.0872
       objectReference: {fileID: 0}
     - target: {fileID: 8893715453903765563, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: m_SuspensionSpring.damper
-      value: 6600.203
+      value: 6600.2026
       objectReference: {fileID: 0}
     - target: {fileID: 8893715453903765563, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
       propertyPath: m_SuspensionSpring.spring
-      value: 61876.91
+      value: 61876.895
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbe06063fc4d51044809b52958a4a446, type: 3}
